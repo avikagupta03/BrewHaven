@@ -1,0 +1,567 @@
+/* 🌍 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+/* 🧭 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #d0a85c;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: #d0a85c;
+}
+
+/* 🏠 Hero Section */
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.btn {
+  background-color: #d0a85c;
+  color: #1a1a1a;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #b3863d;
+  transform: translateY(-2px);
+}
+
+/* ☕ Menu Section (Slider Style on Home) */
+.menu {
+  padding: 5rem 5%;
+  background-color: #2b2b2b;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: #d0a85c;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Slider Container */
+.menu-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.menu-track {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease;
+}
+
+.menu-item {
+  flex: 0 0 300px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(208, 168, 92, 0.5);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-item h3 {
+  color: #d0a85c;
+  margin-bottom: 0.5rem;
+}
+
+/* Slider Buttons */
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #d0a85c;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.slide-btn:hover {
+  background: #b3863d;
+}
+
+.prev {
+  left: -2rem;
+}
+
+.next {
+  right: -2rem;
+}
+
+/* View Full Menu Button */
+.view-all {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #d0a85c;
+  color: #1a1a1a;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.view-all:hover {
+  background: #b3863d;
+  transform: translateY(-2px);
+}
+
+/* 🏛️ About Section */
+.about {
+  padding: 5rem 8%;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  scroll-margin-top: 80px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #d0a85c;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ☎️ Contact Section */
+.contact {
+  background-color: #2b2b2b;
+  padding: 4rem 5%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #eee;
+  line-height: 1.8;
+  scroll-margin-top: 80px;
+}
+
+/* 🧩 Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: #ccc;
+}
+
+/* ⬆️ Scroll Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #d0a85c;
+  border: none;
+  color: #1a1a1a;
+  font-size: 20px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #b3863d;
+  transform: translateY(-3px);
+}
+
+/* ===== Full Menu Page Styling ===== */
+.full-menu {
+  padding-top: 7rem;
+  min-height: 100vh;
+}
+
+.category-title {
+  text-align: left;
+  font-size: 1.8rem;
+  color: #d0a85c;
+  margin: 3rem 5% 1.5rem;
+  border-left: 5px solid #d0a85c;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.full-menu .menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.full-menu .menu-item {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.full-menu .menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(208, 168, 92, 0.5);
+}
+
+.full-menu .menu-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.full-menu .menu-item h3 {
+  color: #d0a85c;
+  margin-bottom: 0.5rem;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 900px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hero-text h2 {
+    font-size: 2.3rem;
+  }
+
+  .menu-track {
+    gap: 1rem;
+  }
+
+  .menu-item {
+    flex: 0 0 80%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 350px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .slide-btn {
+    display: none;
+  }
+}
+/* 🌟 Elegant Category Title */
+.category-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  color: #d0a85c;
+  margin: 4rem auto 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0 1.2rem;
+}
+
+/* Decorative lines on both sides */
+.category-title::before,
+.category-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d0a85c, transparent);
+  transform: translateY(-50%);
+}
+
+.category-title::before {
+  left: -100px;
+}
+
+.category-title::after {
+  right: -100px;
+}
+
+/* Subtle glow effect for a cozy vibe */
+.category-title {
+  text-shadow: 0 0 10px rgba(208, 168, 92, 0.3);
+}
+
+/* Slight animation for when scrolling into view (optional) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.category-title {
+  animation: fadeInUp 0.8s ease both;
+}
+/* Soft divider between categories */
+.full-menu .menu-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.full-menu .menu-item {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* 🪄 Center content vertically & horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers horizontally */
+  height: 100%;            /* Ensures proper vertical space */
+  min-height: 350px;       /* Keeps consistent card height */
+}
+
+.full-menu .menu-item img {
+  width: 100%;
+  height: 180px;            /* Uniform image size */
+  object-fit: cover;        /* Prevents distortion */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.full-menu .menu-item h3 {
+  color: #d0a85c;
+  margin-bottom: 0.5rem;
+}
+
+.full-menu .menu-item p {
+  line-height: 1.5;
+  color: #ddd;
+  max-width: 85%;
+  text-align: center;
+}
+/* ===== Contact Section (Updated Layout) ===== */
+/* 🌟 Enhanced Contact Layout Split */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+/* Left (Contact Info) */
+.contact-details {
+  flex: 1;
+  min-width: 320px;
+  background: linear-gradient(145deg, #1a1a1a, #222);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-left: 4px solid #d0a85c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-details:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(208, 168, 92, 0.2);
+}
+
+/* Right (Franchise Invite) */
+.franchise-invite {
+  flex: 1;
+  min-width: 320px;
+  background: linear-gradient(145deg, rgba(208, 168, 92, 0.1), rgba(208, 168, 92, 0.05));
+  border: 1px solid rgba(208, 168, 92, 0.2);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(208, 168, 92, 0.15);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.franchise-invite:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(208, 168, 92, 0.3);
+}
+
+/* Franchise Button */
+.franchise-btn {
+  align-self: flex-start;
+  background-color: #d0a85c;
+  color: #1a1a1a;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.franchise-btn:hover {
+  background-color: #b3863d;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(208, 168, 92, 0.3);
+}
+
+/* Responsive Fix for Small Devices */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details,
+  .franchise-invite {
+    text-align: center;
+  }
+
+  .franchise-btn {
+    align-self: center;
+  }
+}
